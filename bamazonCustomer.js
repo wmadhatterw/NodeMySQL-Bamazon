@@ -97,7 +97,7 @@ function start() {
 				if (data.length===0){
 				console.log("ERROR: Invalid Item.");
 				start();
-				} else if(stockQuantity > quantitySold){
+				} else if(stockQuantity >= quantitySold){
 					stockQuantity = stockQuantity - quantitySold;
 		// Write data to database
 					var updateQueryStr = 'UPDATE Products SET stockQuantity = ' + stockQuantity + ' WHERE ID = ' + item;
