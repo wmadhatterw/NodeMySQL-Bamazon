@@ -1,6 +1,6 @@
 # NodeMySQL-Bamazon
 
-To use app install clone repo.  In terminal type "npm install"
+To use app clone repo.  In terminal type "npm install"
 
 Then "node bamazon.js"
 
