@@ -8,4 +8,4 @@ follow on screen instructions
 
 or view movie in Movie Folder
 
-[link to Movie!](/movies/bamazon)
+[link to Movie!](/movie/Bamazon.mov)
