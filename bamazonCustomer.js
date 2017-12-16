@@ -66,7 +66,7 @@ function start() {
 	            return true;
 	          }
 	          return false;
-	        }
+	          }
 		},
         {
           name: "amount",
@@ -99,7 +99,7 @@ function start() {
 				start();
 				} else if(stockQuantity >= quantitySold){
 					stockQuantity = stockQuantity - quantitySold;
-		// Write data to database
+				// Write data to database
 					var updateQueryStr = 'UPDATE Products SET stockQuantity = ' + stockQuantity + ' WHERE ID = ' + item;
 					connection.query(updateQueryStr,  function(err, data) {
 						if (err) throw err;
@@ -109,16 +109,16 @@ function start() {
 						console.log("\n---------------------------------------------------------------------\n");
 
 						connection.end();
-					})
+					})// end write data function
 
 				} else{
 					console.log("Insufficient Quantity Please Select an amount less than " + stockQuantity);
 					start();
-				}
-	    	});
-	    });
-	})
-}
+				} // end else
+	    	});// end read data function
+	    }); // end promise function after inquirer
+	})// end initial inventory read function
+}//end Start function
 
   
 
